@@ -1,0 +1,43 @@
+{
+    "name": "acp-blog",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Blog by Ángel Casas Pescador",
+    "keywords": [
+        "blog",
+        "machine-learning",
+        "economy",
+        "nature"
+    ],
+    "author": "Ángel Casas Pescador",
+    "license": "UNLICENSED",
+    "scripts": {
+        "serve": "concurrently \"cd ./server && npm run server\" \"cd ./client && npm run dev\" -k",
+        "seed": "node ./scripts/run_seed",
+        "build": "cd ./client && npm run build",
+        "start": "node server",
+        "test:unit:client": "",
+        "test:e2e": "",
+        "test:unit:server": "cross-env NODE_ENV=test mocha tests/unit/server --timeout=15000 --exit"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "jsonwebtoken": "^9.0.0",
+        "mongoose": "^6.9.1",
+        "vee-validate": "^4.7.4",
+        "yup": "^1.0.0"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "chromedriver": "^110.0.0",
+        "concurrently": "^7.6.0",
+        "cross-env": "^7.0.3",
+        "expect": "^29.4.2",
+        "geckodriver": "^3.2.0",
+        "mocha": "^10.2.0",
+        "mongodb": "^5.0.1",
+        "nightwatch": "^2.6.16",
+        "supertest": "^6.3.3",
+        "vite-plugin-nightwatch": "^0.4.2"
+    }
+}

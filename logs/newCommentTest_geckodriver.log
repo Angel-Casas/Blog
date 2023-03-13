@@ -1,0 +1,131 @@
+1678199370643	geckodriver	INFO	Listening on 127.0.0.1:4444
+1678199370661	webdriver::server	DEBUG	-> GET /status 
+1678199370662	webdriver::server	DEBUG	<- 200 OK {"value":{"message":"","ready":true}}
+1678199370672	webdriver::server	DEBUG	-> POST /session {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"browserName":"firefox"}}}
+1678199370673	geckodriver::capabilities	DEBUG	Trying to read firefox version from ini files
+1678199370673	geckodriver::capabilities	DEBUG	Trying to read firefox version from binary
+1678199370962	geckodriver::capabilities	DEBUG	Found version 110.0.1
+1678199370964	mozrunner::runner	INFO	Running command: "/snap/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileKAqwBw"
+1678199370964	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1678199370964	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199370964	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371064	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371064	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371165	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371165	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371265	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371265	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371365	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371365	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371465	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371465	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371565	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371565	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371665	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371665	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371766	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371766	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371866	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371866	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199371966	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199371966	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372066	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372066	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372166	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372166	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372266	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372266	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372367	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372367	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372467	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372467	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372567	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372567	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372667	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372667	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372767	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372767	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372868	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372868	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199372968	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199372968	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373068	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373068	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373168	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373168	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373268	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373269	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373369	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373369	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373469	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373469	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373569	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373569	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373670	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373670	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373770	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373770	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373870	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373870	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199373970	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199373970	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374070	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374070	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374170	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374170	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374271	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374271	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374371	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374371	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374471	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374471	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374571	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374571	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374672	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374672	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374772	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374772	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374872	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374872	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199374973	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199374973	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375073	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375073	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375173	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375173	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375274	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375274	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375374	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375374	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375474	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375474	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375574	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375574	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375674	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375674	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375774	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375775	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375875	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375875	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199375975	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199375975	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376075	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376075	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376175	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376175	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376276	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376276	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376376	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376376	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376476	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376476	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376576	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376576	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376677	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376677	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376777	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376777	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376877	geckodriver::browser	TRACE	Failed to open /tmp/rust_mozprofileKAqwBw/MarionetteActivePort
+1678199376877	geckodriver::marionette	TRACE	Retrying in 100ms
+1678199376977	geckodriver::browser	DEBUG	Browser process stopped: exit status: 1
+1678199376978	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"Process unexpectedly closed with status 1","stacktrace":""}}

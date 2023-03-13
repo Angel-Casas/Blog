@@ -1,0 +1,58 @@
+
+<template>
+  <div id="Main">
+    <header>
+      <h2 class="color">Welcome {{ user?.name }}</h2>
+    </header>
+    <blockquote class="outline">
+      <p>Self-education is, I firmly believe, the only kind of education there is.</p>
+      <cite>Isaac Asimov</cite>
+    </blockquote>
+    <div id="intro-message">
+      <p>It is in the same spirit as Isaac Asimov's that I want to document my learning process, because some time ago I came across an idea that settled my way of seeing the world: aim at the most valuable goal you can conceive of and gradually move towards achieving that goal with small incremental steps.</p>
+      <p>In this logic and with this conviction, it seemed to me that writing a blog and sharing my ideas with anyone who comes across these pages can help me to get closer to the conquest of my goals, because by transmitting my ideas I can gain a clearer understanding of my shortcomings and perhaps my audience can help me to correct those failures in which I will fall without being aware of them.</p>
+      <p>In this sense, I have been fortunate enough to find the intellectual peaks that I want to conquer in my lifetime, and, just as a farmer sowing seeds in the ground begins a living relationship with the plant that grows for years to come with the promise of good fruit or good shelter, I seek to maintain this relationship that I began some years ago in the field of computer science, economic science and the study of mathematics, a relationship that fills me with a sense of fulfillment as it roots my knowledge of the world around me.</p>
+      <p>Having lived most of my childhood surrounded by nature, I have learned to appreciate its beauty and have slowly developed an awareness of the mysteries it hides, which is why I have decided to introduce in this blog a section dedicated exclusively to nature and its beauty.</p>
+    </div>
+    <div class="indexPost" v-if="randomPost">
+      <header>
+        <h3 class="color">Random Post</h3>
+      </header>
+      <PostPreview :post="randomPost"></PostPreview>
+    </div>
+    <div class="tagCloud" v-if="tags">
+      <header>
+        <h3 class="color">Tags</h3>
+      </header>
+      <div class="tags">
+        <RouterLink v-for='tag in tags' :key='tag.slug' :to='{ name: "tagList", params: { tag: tag.slug }}'>{{ tag.title }}</RouterLink>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+/* IMPORTS */
+import { onMounted } from 'vue';
+import { storeToRefs } from 'pinia';
+import { usePostStore, useUserStore, useTagStore } from '@/stores';
+import PostPreview from '@/components/PostPreview.vue';
+
+/* VARIABLES */
+
+const postStore = usePostStore();
+const userStore = useUserStore();
+const tagStore = useTagStore();
+
+const { user } = storeToRefs(userStore);
+const { randomPost } = storeToRefs(postStore);
+const { tags } = storeToRefs(tagStore);
+
+/* MOUNTED */
+
+onMounted(async () => {
+  await tagStore.fetchTags();
+  await postStore.fetchPosts();
+  postStore.getRandomPost();
+});
+</script>

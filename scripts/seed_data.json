@@ -1,0 +1,58 @@
+[
+  {
+    "title": "TestTitle1",
+    "body": "POSTBODY1",
+    "preview": "TestPreview1",
+    "titulo": "PruebaTitulo1",
+    "cuerpo": "POSTBODY1",
+    "previo": "PruebaPrevia1",
+    "section": "CS",
+    "cover": "/images/posts/Economics/Bitcoin/quitamelacabesa.jpg",
+    "tags": [
+      "Computer Science",
+      "Science"
+    ]
+  },
+  {
+    "title": "TestTitle2",
+    "body": "POSTBODY2",
+    "preview": "TestPreview2",
+    "titulo": "PruebaTitulo2",
+    "cuerpo": "POSTBODY2",
+    "previo": "PruebaPrevia2",
+    "cover": "",
+    "section": "nature",
+    "tags": [
+      "Mathematics",
+      "Nature"
+    ]
+  },
+  {
+    "title": "TestTitle3",
+    "body": "POSTBODY3",
+    "preview": "TestPreview3",
+    "titulo": "PruebaTitulo3",
+    "cuerpo": "POSTBODY3",
+    "previo": "PruebaPrevia3",
+    "cover": "",
+    "section": "mathematics",
+    "tags": [
+      "Geometry",
+      "Nature"
+    ]
+  },
+  {
+    "title": "TestTitle4",
+    "body": "POSTBODY4",
+    "preview": "TestPreview4",
+    "titulo": "PruebaTitulo4",
+    "cuerpo": "POSTBODY4",
+    "previo": "PruebaPrevia4",
+    "cover": "",
+    "section": "Nature",
+    "tags": [
+      "TestTag2",
+      "TestTag3"
+    ]
+  }
+]
