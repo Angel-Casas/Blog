@@ -2,12 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const db = require('./models');
-const path = require('path');
 
 const app = express();
 
 require("dotenv").config({
-    path: path.join(__dirname, "../environment/.env")
+    path: "./environment/.env"
 });
 
 var corsOptions = {
@@ -30,23 +29,14 @@ db.mongoose
 app.use(cors(corsOptions));
 
 // Parse requests of content-type - application/json
-app.use(bodyParser.json({ limit: '50mb' }));
+app.use(express.json({ limit: '50mb' }));
 
 // Parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Register routes
-app.use('/posts', require('./routes/posts'));
-app.use('/users', require('./routes/users'));
-app.use('/tags', require('./routes/tags'));
-
-// Set port, listen for requests
-const PORT = process.env.SERVER_PORT || 8070;
-
-if (process.env.NODE_ENV !== "test") {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
-    });
-};
+app.use('/.netlify/functions/server/posts', require('./routes/posts'));
+app.use('/.netlify/functions/server/users', require('./routes/users'));
+app.use('/.netlify/functions/server/tags', require('./routes/tags'));
 
 module.exports = app;
