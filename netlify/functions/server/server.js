@@ -1,5 +1,6 @@
 const express = require('express');
 const db = require('./models');
+const serverless = require('serverless-http');
 
 const app = express();
 
@@ -27,4 +28,6 @@ app.use('/.netlify/functions/server/posts', require('./routes/posts'));
 app.use('/.netlify/functions/server/users', require('./routes/users'));
 app.use('/.netlify/functions/server/tags', require('./routes/tags'));
 
-module.exports = app;
+const handler = serverless(app);
+
+module.exports = { handler };
