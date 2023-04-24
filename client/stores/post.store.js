@@ -39,6 +39,7 @@ export const usePostStore = defineStore({
       this.loading = true;
       try {
         const data = await fetchWrapper.get(`${baseUrl}/${section}`);
+        console.log(data);
         this.posts = data.posts;
       } catch (error) {
         this.error = error;
