@@ -10,7 +10,7 @@ const db = {};
 
 db.mongoose = mongoose;
 db.url = dbConfig.url;
-db.options = dbConfig.mongoOptions;
+db.mongoOptions = dbConfig.mongoOptions;
 db.posts = require('./post.model.js')(mongoose);
 db.tags = require('./tag.model.js')(mongoose);
 db.users = require('./user.model.js')(mongoose);
