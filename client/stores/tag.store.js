@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { fetchWrapper } from '@/helpers';
 
-const baseUrl = `${import.meta.env.VITE_API_URL}/api/tags`;
+const baseUrl = `/server/api/tags`;
 
 export const useTagStore = defineStore({
   id: 'tag',
