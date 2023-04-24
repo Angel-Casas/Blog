@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import { fetchWrapper, slugify } from '@/helpers';
 
-const baseUrl = `/api/posts`;
+const baseUrl = `/api/server/posts`;
 
 export const usePostStore = defineStore({
   id: 'post',
