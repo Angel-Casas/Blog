@@ -7,7 +7,7 @@ const app = express();
 
 app.get('/tags', TagController.getTagList);
 app.post('/tags', authenticate, admin, TagController.createTag);
-app.post('/tags/removeOprhans', authenticate, admin, TagController.removeOprhans);
+app.post('/tags/removeOprhans', authenticate, admin, TagController.removeOrphans);
 app.get('/tags/:tag', TagController.getTag);
 
-module.exports.handler = serverless(app);
+module.exports = serverless(app);

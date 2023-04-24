@@ -22,6 +22,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 // Register routes
+console.log(typeof require('./routes/posts'));
 app.use('/.netlify/functions/server/posts', require('./routes/posts'));
 app.use('/.netlify/functions/server/users', require('./routes/users'));
 app.use('/.netlify/functions/server/tags', require('./routes/tags'));

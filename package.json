@@ -15,6 +15,7 @@
         "serve": "concurrently \"cd ./server && npm run server\" \"cd ./client && npm run dev\" -k",
         "seed": "node ./scripts/run_seed",
         "build": "cd ./client && npm run build",
+        "dev": "node ./netlify/functions/server/server.js",
         "start": "node server",
         "test:unit:client": "",
         "test:e2e": "",

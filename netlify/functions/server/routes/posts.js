@@ -15,4 +15,4 @@ app.post('/posts/:section/:id/comment', PostController.createCommentOnPost);
 app.delete('/posts/:section/:id/comment', authenticate, admin, PostController.deleteCommentOnPost);
 app.post('/posts/:section/:id/comment/approve', authenticate, admin, PostController.approveComment);
 
-module.exports.handler = serverless(app);
+module.exports = serverless(app);
