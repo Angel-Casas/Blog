@@ -4,6 +4,8 @@ const serverless = require('serverless-http');
 
 const app = express();
 
+console.log(db);
+
 // Mongoose connection
 db.mongoose
     .connect(db.url, db.mongoOptions)
